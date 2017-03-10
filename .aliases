@@ -1,0 +1,7 @@
+alias star-wars='telnet towel.blinkenlights.nl'
+alias updateme='sudo apt update'
+alias upgrademe='sudo apt upgrade'
+alias quote='fortune | cowsay | lolcat'
+alias sp=/home/konstantin/Documents/apps/sp
+alias gau='git add -u'
+alias getpkg='sudo apt install'
