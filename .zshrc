@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/konstantin/.oh-my-zsh
+  export ZSH=/home/$USER/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -87,9 +87,9 @@ source ~/.aliases
 
 eval "$(thefuck --alias)"
 
-DEFAULT_USER=konstantin
+DEFAULT_USER=$USER
 PROJECT_PATHS=(~/Documents/Github)
 
-. /home/konstantin/Documents/Github/z/z.sh
+. /home/$USER/Documents/Github/z/z.sh
 source ~/.oh-my-zsh/custom/plugins/calc/calc.plugin.zsh
 source ~/.oh-my-zsh/custom/plugins/history-search-multi-word/history-search-multi-word.plugin.zsh
