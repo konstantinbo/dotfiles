@@ -1,7 +1,10 @@
 alias star-wars='telnet towel.blinkenlights.nl'
 alias updateme='sudo apt update'
 alias upgrademe='sudo apt upgrade'
-alias quote='fortune | cowsay | lolcat'
+alias meme='fortune | cowsay | lolcat'
 alias sp=/home/konstantin/Documents/apps/sp
 alias gau='git add -u'
 alias getpkg='sudo apt install'
+alias searchpkg='apt-cache search'
+alias decrypt='encfs ~/Documents/.weidmueller ~/Documents/wea-data'
+alias encrypt='fusermount -u ~/Documents/wea-data'
