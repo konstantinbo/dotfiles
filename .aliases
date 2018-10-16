@@ -6,5 +6,8 @@ alias sp=/home/konstantin/Documents/apps/sp
 alias gau='git add -u'
 alias getpkg='sudo apt install'
 alias searchpkg='apt-cache search'
+alias delpkg='_ apt-get purge'
 alias decrypt='encfs ~/Documents/.weidmueller ~/Documents/wea-data'
 alias encrypt='fusermount -u ~/Documents/wea-data'
+alias yolo='git commit -m "$(curl -s whatthecommit.com/index.txt)"'
+alias pentest='ssh -f -L 5902:localhost:5900 root@pentestlab-login.inf.tu-dresden.de -p 2262 sleep 10; java -jar ~/Documents/apps/tightVNC/tightvnc-jviewer.jar -port=5902 -host=localhost'

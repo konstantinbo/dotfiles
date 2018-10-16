@@ -51,7 +51,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages pj web-search zsh-syntax-highlighting alias-tips command-not-found k zsh-dircolors-solarized sudo)
+plugins=(git colored-man-pages pj web-search zsh-syntax-highlighting alias-tips command-not-found k zsh-dircolors-solarized sudo zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,3 +93,21 @@ PROJECT_PATHS=(~/Documents/Github)
 . /home/$USER/Documents/Github/z/z.sh
 source ~/.oh-my-zsh/custom/plugins/calc/calc.plugin.zsh
 source ~/.oh-my-zsh/custom/plugins/history-search-multi-word/history-search-multi-word.plugin.zsh
+
+# export PATH=$PATH:/opt/Qt5.7.1/5.7/gcc_64/bin
+
+#explain.sh begins
+explain () {
+  if [ "$#" -eq 0 ]; then
+    while read  -p "Command: " cmd; do
+      curl -Gs "https://www.mankier.com/api/explain/?cols="$(tput cols) --data-urlencode "q=$cmd"
+    done
+    echo "Bye!"
+  elif [ "$#" -eq 1 ]; then
+    curl -Gs "https://www.mankier.com/api/explain/?cols="$(tput cols) --data-urlencode "q=$1"
+  else
+    echo "Usage"
+    echo "explain                  interactive mode."
+    echo "explain 'cmd -o | ...'   one quoted command to explain it."
+  fi
+}
