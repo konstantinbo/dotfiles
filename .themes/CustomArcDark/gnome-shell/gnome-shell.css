@@ -1,0 +1,19 @@
+@import url("/usr/share/themes/Arc-Dark/gnome-shell/gnome-shell.css");
+
+stage {
+  font-size: 10pt; }
+
+// Increase battery percentage font size
+#panel {
+}
+  #panel .power-status.panel-status-indicators-box {
+      font-size: 15px; }
+
+# Increase notification icons size, because default are way too small
+.message-icon-bin {
+  padding: 4px 0px 4px 4px; }
+    .message-icon-bin:rtl {
+      padding: 4px 4px 4px 0px; }
+    .message-icon-bin > StIcon {
+      icon-size: 48px;
+      color: inherit; }
