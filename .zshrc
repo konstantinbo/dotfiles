@@ -95,6 +95,7 @@ source ~/.oh-my-zsh/custom/plugins/calc/calc.plugin.zsh
 source ~/.oh-my-zsh/custom/plugins/history-search-multi-word/history-search-multi-word.plugin.zsh
 
 # export PATH=$PATH:/opt/Qt5.7.1/5.7/gcc_64/bin
+export PATH=$PATH:/home/$USER/Documents/Github/fileinfo/fileinfo
 
 #explain.sh begins
 explain () {
